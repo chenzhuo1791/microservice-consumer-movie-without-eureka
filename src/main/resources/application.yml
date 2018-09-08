@@ -1,0 +1,16 @@
+server:
+  port: 8010
+  servlet:
+    context-path: /
+
+logging:
+  level:
+    root : INFO
+
+spring:
+  application:
+    name: microservice-consumer-movie
+
+microservice-provider-user:
+  ribbon:
+    listOfServers: localhost:8001,localhost:8002
